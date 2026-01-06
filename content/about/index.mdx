@@ -1,79 +1,56 @@
 ---
 title: About
-description: Canopy IIIF makes easy the creation of digital projects for libraries, archives, and museums. Created by Mat Jordan and Mark Baggett.
-image: https://iiif.dc.library.northwestern.edu/iiif/3/138a94b0-175a-4152-98c7-df58661ce7d5/950,520,7100,4740/!1200,630/0/default.jpg
-referencedManifests:
-  - https://api.dc.library.northwestern.edu/api/v2/works/4bdb5a22-6c7f-498d-8e6e-e49ea9bc4778?as=iiif
-  - https://api.dc.library.northwestern.edu/api/v2/works/c26591b2-994b-4ba3-a87e-9124419fa91b?as=iiif
-  - https://api.dc.library.northwestern.edu/api/v2/works/d4c62d7f-f50d-4b29-85e0-5d380675bec7?as=iiif
+description: This site is created with Canopy IIIF, a static HTML generator designed for digital scholarship collections using the IIIF APIs.
 ---
 
-import {CanopyDiagram} from "@canopy-iiif/app/ui/server";
+This site is created with [Canopy IIIF](https://canopy-iiif.github.io/docs/), a static HTML generator designed for digital scholarship collections using the [IIIF](https://iiif.io/) APIs (generally pronounced “triple-eye-eff”). This website and [associated research publications](https://www.nga.gov/research/center/early-history-accademia-di-san-luca#a-section-header-p162966) are designed around sustainability, reusability, and minimal resources. The research team uses [Tropy](https://tropy.org/) to curate image collections and metadata, the [Tropiiify extension](https://github.com/arkalab/tropiiify) to export IIIF collections in three main content types (documents, maps, and guidebooks), and [GitHub Pages](https://docs.github.com/en/pages) to publish source files. These interoperable components are open source and free to use with relatively low initial cost. They can be deployed by researchers who wish to generate their own projects and questions from the same source materials. 
 
-# About
+**New features launched with this version of the research project website include:**
+ 
+- Enhanced search features and filters. 
+- Annotated key terms in document transcriptions. 
+- Reusable IIIF manifests and collections for all resources. 
 
-Using [IIIF Presentation Collection(s)](https://iiif.io/api/presentation/3.0/#overview-collection) as a data source, Canopy IIIF (Canopy) generates a scholarly digital projects platform that transforms provided digital collections into an accessible, discoverable research environment. Built on modern web standards and leveraging the interoperability of IIIF, Canopy creates static sites that extend existing IIIF resources while providing advanced localized search capabilities, contextual navigation, and customizable presentation layers.
+## Digital project history 
 
-<ButtonWrapper variant="interstitial" text="Have an idea for a project?">
-  <Button href="/about/get-started" label="Get started" />
-  <Button
-    href="https://canopy-iiif.github.io/app/docs/"
-    label="Read documentation"
-    variant="secondary"
-  />
-</ButtonWrapper>
+The initial goal of The Early History of the Accademia di San Luca research project was to build a database using Extensible Markup Language (XML) and the international Text Encoding Initiative (TEI) guidelines to mark names, dates, and places in document transcriptions. By 2010, the project website was available to search and filter documents. In 2014, the rich TEI encoding created from the archival documents was no longer supported by the digital platforms employed by the National Gallery of art at the time, and the project team built a new system with Adobe CQ5 (later AEM), which also allowed for easier content updates. Starting in 2016, the revived site featured deep zoomable maps of sixteenth- and seventeenth-century Rome using the International Image Interoperability Framework (IIIF). Historical guidebooks describing the city and churches of Rome were added in 2021–2023. In 2023-2024, approximately 200 new documents augmented the original selection. 
 
-## Overview
+In 2025-2026, during the rebuilding of the National Gallery of Art’s latest website, the project was migrated to its current home on GitHub (described above). 
 
-Picture two source IIIF collections with digitized items relating to a famous author: **Collection A** providing _70 manifests_ and **Collection B** contributing _35 more_. A team is tasked with building out a unified digital project for these items that allows users to browse their content, as well aso interact with contextual essays, timelines, and maps. By using Canopy, impementers can quickly stand-up a working projecty with every manifest becoming its own work page, authored Markdown files providing context, and both streams feeding a shared search index before everything is written out to static HTML, CSS, and data assets. The diagram below walks through that pipeline so you can see how these raw manifests become a ready-to-host digital project.
+## Archives and transcription conventions 
 
-<CanopyDiagram />
+The Early History of the Accademia di San Luca brings together notarial records from the collections of documents pertaining to the offices of the Trenta Notai Capitolini (TNC) and the Tribunale Civile del Senato (TCS) held at the Archivio di Stato di Roma (ASR). Many of these documents concerning the institutional history of the Accademia di San Luca were previously thought to be lost. They include: 
 
-Comprehensive [documentation](https://canopy-iiif.github.io/app/docs/) is integrated into the application and serves as both a development guide and a demonstration of Canopy's potential for digital scholarship and humanities projects. To highlight what Canopy can do, this paragraph is authored in markdown from [a simple text file](https://github.com/canopy-iiif/template/blob/main/content/about/index.mdx?plain=1) and below is an example of an `<Image>` component rendering a IIIF image resource along with an inline annotation and caption. This same image is provided by Northwestern University Libraries as a [IIIF Manifest](https://api.dc.library.northwestern.edu/api/v2/works/4bdb5a22-6c7f-498d-8e6e-e49ea9bc4778?as=iiif) from their [Digital Collections platform](https://dc.library.northwestern.edu/items/4bdb5a22-6c7f-498d-8e6e-e49ea9bc4778) and [aggregated into this project](https://canopy-iiif.github.io/app/works/the-town-and-pass-of-boondi-in-rajpootana.html) as a static page during the Canopy build process.
+- rental agreements and records of legal disputes regarding the collection of rent payments. 
+- transactions with the workers who were charged with the renovation of the Accademia's original, derelict church. 
+- inventories of the Accademia’s art and library collections. 
+- evidence of the institution's increasing control over the production and appraisal of works of art. 
+- details of the internal strife that marked the Accademia's first decades of existence. 
+- evidence of the teaching of young artists in Rome. 
+ 
+The transcriptions are organized by personal name, place name, key term, document type, notary name, and year. The documents are intended for study by researchers of early modern Italy, and to encourage their wider use towards identifying of additional archival material. 
 
-<Image
-  src="https://iiif.dc.library.northwestern.edu/iiif/3/138a94b0-175a-4152-98c7-df58661ce7d5"
-  isTiledImage={true}
-  height="500px"
-  alt="Painting of the The town & pass of Boondi, in Rajpootana"
-  caption="The town & pass of Boondi, in Rajpootana - Situated on a southern slope of a hill at the end of a long range, the town of Boondi was the capital of the Rajput principality of that name. The palace of the Raja is a large masonry stone building about half way up the hill, according to Grindlay, with a kind of fortification extending to the top."
-  annotations={[
-        {
-          annotation: {
-            id: "https://iiif.dc.library.northwestern.edu/iiif/3/f7409acd-e3f9-496a-b733-81f46d4ffa4f/annotation/0",
-            type: "Annotation",
-            motivation: ["tagging"],
-            body: [
-              {
-                id: "https://iiif.dc.library.northwestern.edu/iiif/3/f7409acd-e3f9-496a-b733-81f46d4ffa4f/annotation/0/body/0",
-                type: "TextualBody",
-                value: "Five individuals traveling.",
-              },
-            ],
-            target: {
-              type: "SpecificResource",
-              source: {
-                id: "https://iiif.dc.library.northwestern.edu/iiif/3/f7409acd-e3f9-496a-b733-81f46d4ffa4f/canvas/1",
-                type: "Canvas",
-              },
-              selector: {
-                type: "FragmentSelector",
-                value: "xywh=1900,4050,1500,1000",
-              },
-            },
-          },
-          targetIndex: 0,
-        }
-      ]}
+## Bibliography and archived versions 
 
-/>
+The research project also maintains a [Zotero database of bibliographical resources](https://www.zotero.org/groups/5626268/accademia_di_san_luca/library) on the history of the Accademia and its most prominent members. A web recorded version of the [previous project website (2015–2025)](https://wayback.archive-it.org/22902/20250331142215/https:/www.nga.gov/accademia/en/intro.html) is available at the Internet Archive. Certain features, like search and image zoom, will not work on the archived site. 
 
-As authors create content using Markdown, they can reference the source material directly within the text using the `<ReferencedItems />` component below. This component dynamically generates a list of all IIIF Manifests that have been explicitly referenced within the markdown content of the page.
+## Credits and collaborators 
 
-<ReferencedItems />
+*The Early History of the Accademia di San Luca* is conceptualized and supported by the Center for Advanced Study in the Visual Arts, National Gallery of Art, in collaboration with the [Archivio di Stato di Roma](https://archiviodistatoroma.cultura.gov.it/) and the [Accademia Nazionale di San Luca](https://accademiasanluca.it/). Additional support comes from the Getty Foundation, a grant from the Samuel H. Kress Foundation for a series of education tours dedicated to audience outreach, and a grant from the Gladys Krieble Delmas Foundation for the transcription of archival documents carried out by former research associate Roberto Fiorentini†. 
+ 
+The project team thanks, in addition to the [previous members of the team](https://wayback.archive-it.org/22902/20250331152210/https://www.nga.gov/accademia/en/credits/previous-team-members.html), colleagues at the Accademia Nazionale di San Luca, including Claudio Strinati, segretario generale, Carolina Brook, accademico cultore, and Elisa Camboni, head of the Archivio Storico, as well as at the Archivio di Stato di Roma, Ricardo Gandolfi, director. Special thanks also to Catherine Sutherland, deputy librarian, Pepys Library, Magdalene College, Cambridge; Vincent Buonanno; and Paul and Frederika Jacobs for their generosity. The project team also thanks Sarah McPhee, Patrizia Cavazzini, and Laurie Nussdorfer, who serve on our advisory board, and Antonia Fiori, associate professor of the history of medieval and early modern law, Università La Sapienza di Roma. The team is equally grateful to colleagues at the Center for Advanced Study in the Visual Arts and the National Gallery of Art Library. 
 
-## Colophon
+This site was created in coordination with Mat Jordan (Northwestern University), developer of [Canopy IIIF](https://canopy-iiif.github.io/app/) with Mark Baggett (Texas A&M University). The associated [research publications](https://www.nga.gov/research/center/early-history-accademia-di-san-luca) were developed with [Quire](https://quire.getty.edu/) in coordination with Erin Dunigan at Getty.  
 
-Canopy was created by [Mat Jordan](https://github.com/mathewjordan) _(Northwestern University)_ and [Mark Baggett](https://github.com/markpbaggett) _(Texas A&M University)_ as a method to quickly build exhibit style digital humanities projects that extend existing digital collections using IIIF Collections and Manifests. It continues to be an active open-source initiative of [Northwestern University Libraries](https://www.library.northwestern.edu/), where it supports digital scholarship in many forms. This example site is built from the [Donald K. Adams and Lawrence D. Stewart Collection of Prints](https://dc.library.northwestern.edu/collections/94536627-cfdf-413c-852b-0cb16d986da3) and the [Indian Paintings on Mica](https://dc.library.northwestern.edu/collections/7ac5769f-a1d9-4227-a350-bf8bd8b1cddc) collection hosted by Northwestern University Libraries' [Digital Collections](https://dc.library.northwestern.edu/).
+For information, please write to [TheCenter@nga.gov](mailto: TheCenter@nga.gov)  
 
-Canopy uses the [IIIF Presentation API](https://iiif.io/api/presentation/3.0/) to deliver rich media from providing institutions, [Markdown as MDX](https://mdxjs.com/) for authoring contextual content and layout, [TailwindCSS](https://tailwindcss.com/) for the user interface, and a static [FlexSearch](https://github.com/nextapps-de/flexsearch) index for search. Easy aggregation and retrieval of IIIF resources is made possible by the [IIIF helpers](https://github.com/IIIF-Commons/iiif-helpers) developed by [Stephen Fraser](https://github.com/stephenwf). In addition, [Clover IIIF](https://github.com/samvera-labs/clover-iiif), developed by Northwestern University Libraries with contributions from other institutions, is integral to Canopy and provides the rendering of IIIF resources, annotations, and metadata throughout the interface.
+## Current National Gallery of Art staff members 
+
+- Peter Lukehart, Project Director 
+
+- Michael Cowden, Manager of Platform Development 
+- Valeria Federici, Research Associate 
+- Magda Nakassis, Editor 
+- Memo Saenz, Product Manager 
+- Matthew J. Westerby, Digital Research Officer 
+- Emily Zoss, Managing Editor for Research Publications 
