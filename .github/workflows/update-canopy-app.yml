@@ -27,7 +27,6 @@ jobs:
 
       - name: Install updated package
         env:
-          TOKEN: ${{ secrets.PR_CREATION_TOKEN }}
           VERSION: ${{ github.event.inputs.npm_version }}
         run: |
           npm config set fund false
@@ -48,7 +47,7 @@ jobs:
         if: steps.git-status.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with: 
-          TOKEN: ${{ secrets.PR_CREATION_TOKEN }}
+          TOKEN: ${{ github.token }}
           branch: chore/update-canopy-app
           commit-message: "chore: update @canopy-iiif/app"
           title: "chore: update @canopy-iiif/app"
