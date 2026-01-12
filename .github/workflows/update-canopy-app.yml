@@ -4,7 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       npm_version:
-        description: "Optional version (default latest)"
+        description: "Optional @canopy-iiif/app version (default latest)"
+        required: false
+        type: string
+      clover_version:
+        description: "Optional @samvera/clover-iiif version (default latest)"
         required: false
         type: string
 
