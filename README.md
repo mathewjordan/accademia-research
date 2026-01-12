@@ -1,18 +1,8 @@
-# Canopy Template
+# Early History of the Accademia di San Luca Canopy IIIF
 
-This repository offers a trimmed down starting point for new Canopy IIIF projects. When you need deeper documentation, examples, or release notes, vist the main project at https://canopy-iiif.github.io/app/.
+This repository uses the Canopy IIIF template to build a website for The Early History of the Accademia di San Luca – Resources.
 
-## Getting Started
-
-Walk through the [Quick Start guide](https://canopy-iiif.github.io/app/docs/user-guides/canopy-get-started.html) to stand up your new digital project, configure `canopy.yml` using your preferred IIIF collection, and add pages and layouts under `content/`.
-
-## Updates
-
-Keep your project current by running `npm install @canopy-iiif/app@latest` whenever a new release ships, or trigger the _Update Canopy App_ GitHub action (Actions tab → _Update Canopy App_ → _Run workflow_) and let it open a pull request with the dependency bump for you. Read the [Developer documentation](https://canopy-iiif.github.io/app/docs/developers) for more information.
-
-## Contributing
-
-All development happens in https://github.com/canopy-iiif/app. If you are interested in shaping Canopy IIIF, please open an issue, share feedback, or send a pull request.
+Documentation, examples, and release notes for Canopy IIIF are availble from the main project: https://canopy-iiif.github.io/app/.
 
 ## License
 
