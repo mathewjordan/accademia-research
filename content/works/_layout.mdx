@@ -12,7 +12,19 @@ import {
 
 <Container variant="wide" style={{display: "flex", gap: "2.618rem"}}>
   <div style={{width: "50%", flexShrink: 0}}>
-    <Viewer iiifContent={props.manifest.id} />
+    <Viewer
+  iiifContent={props.manifest.id}
+  options={{
+    informationPanel: {
+      open: true,
+      renderAbout: false,
+      renderAnnotation: true,
+    },
+    annotations: {
+      motivations: ["tagging"],
+    },
+  }}
+/>
   </div>
   <div>
     <header>
@@ -35,6 +47,9 @@ import {
         aspectRatio: 1,
         display: "image-viewer",
         width: "650px",
+      },
+      annotations: {
+        motivations: ["commenting"],
       },
     }}
   />
