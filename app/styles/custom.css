@@ -1,13 +1,82 @@
-/** 
- * Example custom color variables
- * @see https://canopy-iiif.github.io/app/docs/theming/tailwind#custom
- */
+/* ==========================================================
+   Local Fonts
+   ========================================================== */
 
-/* @layer properties {
-  :root,
-  :host {
-    --color-northwestern-purple: #4e2a84;
-    --color-accent-700: var(--color-northwestern-purple);
-    --color-accent-default: var(--color-northwestern-purple);
-  }
-} */
+/* ---------- Empirica Headline ---------- */
+
+@font-face {
+  font-family: "Empirica Headline";
+  src: url("/assets/fonts/Empirica Headline/EmpiricaHeadline-Light.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Empirica Headline";
+  src: url("/assets/fonts/Empirica Headline/EmpiricaHeadline-Black.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Empirica Text ---------- */
+
+@font-face {
+  font-family: "Empirica Text";
+  src: url("/assets/fonts/Empirica Text/EmpiricaText-Light.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Empirica Text";
+  src: url("/assets/fonts/Empirica Text/EmpiricaText-LightItalic.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- Mallory ---------- */
+
+@font-face {
+  font-family: "Mallory";
+  src: url("/assets/fonts/Mallory/Mallory OTF/MalloryMPCmpct-Light.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mallory";
+  src: url("/assets/fonts/Mallory/Mallory OTF/MalloryMPCmpct-LightItalic.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mallory";
+  src: url("/assets/fonts/Mallory/Mallory OTF/MalloryMPCmpct-Black.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mallory";
+  src: url("/assets/fonts/Mallory/Mallory OTF/MalloryMPCmpct-BlackItalic.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+ 
