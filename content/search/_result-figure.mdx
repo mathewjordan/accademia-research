@@ -3,7 +3,7 @@ import {Card} from "@canopy-iiif/app/ui";
 <Card
   href={props.record?.href}
   title={props.record?.title || props.record?.href || "Untitled"}
-  src={props.record?.type === "resources" ? props.record?.thumbnail : undefined}
+  src={props.record?.type === "work" ? props.record?.thumbnail : undefined}
   imgWidth={props.record?.thumbnailWidth}
   imgHeight={props.record?.thumbnailHeight}
   aspectRatio={props.thumbnailAspectRatio}
