@@ -11,6 +11,12 @@ import {
 } from "@canopy-iiif/app/ui/server";
 
 <Container variant="wide" style={{display: "flex", gap: "2.618rem"}}>
+  <div>
+    <header>
+      <Label manifest={props.manifest} as="h1" />
+      <Summary manifest={props.manifest} as="p" className="canopy-lead" />
+    </header>
+    <div>
   <div style={{width: "60%", flexShrink: 0}}>
     <Viewer
       iiifContent={props.manifest.id}
@@ -27,11 +33,6 @@ import {
       }}
     />
   </div>
-  <div>
-    <header>
-      <Label manifest={props.manifest} as="h1" />
-      <Summary manifest={props.manifest} as="p" className="canopy-lead" />
-    </header>
     <div>
       <References />
       <Metadata manifest={props.manifest} />
@@ -50,7 +51,7 @@ import {
         width: "650px",
       },
       annotations: {
-        motivations: ["commenting", "tagging"],
+        motivations: ["commenting"],
       },
     }}
   />
