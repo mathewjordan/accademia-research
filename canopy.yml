@@ -13,7 +13,7 @@ featured:
   - https://nationalgalleryofart.github.io/accademia-documents-iiif/asrtcsvol054216210609/manifest.json
 search:
   results:
-    resources:
+    work:
       layout: grid
       result: figure
     page:
