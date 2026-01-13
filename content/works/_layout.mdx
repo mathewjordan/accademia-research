@@ -17,6 +17,11 @@ import {
       <Summary manifest={props.manifest} as="p" className="canopy-lead" />
     </header>
     <div>
+      <References />
+      <Metadata manifest={props.manifest} />
+      <RequiredStatement manifest={props.manifest} />
+    </div>
+  </div>
   <div style={{width: "60%", flexShrink: 0}}>
     <Viewer
       iiifContent={props.manifest.id}
@@ -32,12 +37,6 @@ import {
         },
       }}
     />
-  </div>
-    <div>
-      <References />
-      <Metadata manifest={props.manifest} />
-      <RequiredStatement manifest={props.manifest} />
-    </div>
   </div>
 </Container>
 <Container variant="wide">
