@@ -1,3 +1,30 @@
+.canopy-type-work h1 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.clover-viewer {
+  .clover-viewer-content {
+    flex-direction: column;
+
+    > div,
+    > aside {
+      width: 100%;
+    }
+
+    > aside {
+      height: 500px;
+    }
+  }
+
+  .clover-iiif-annotation-item {
+    button {
+      cursor: pointer;
+    }
+  }
+}
+
 /* ==========================================================
    Local Fonts
    ========================================================== */
