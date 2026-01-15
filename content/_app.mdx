@@ -1,11 +1,12 @@
 import {Meta, Stylesheet} from "@canopy-iiif/app/head";
-import {CanopyHeader, CanopyFooter} from "@canopy-iiif/app/ui";
+import {CanopyHeader, CanopyFooter, GoogleAnalytics} from "@canopy-iiif/app/ui";
 
 export function Head() {
   return (
     <>
       <Meta siteTitle="The Early History of the Accademia di San Luca - Resources" />
       <Stylesheet />
+      <GoogleAnalytics id="GTM-W8XHQQD" />
     </>
   );
 }
