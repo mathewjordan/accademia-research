@@ -1,8 +1,8 @@
 # The Early History of the Accademia di San Luca – Resources Canopy IIIF
 
-This repository uses the Canopy IIIF template to build a website of resources for The Early History of the Accademia di San Luca, a project of the Center for Advanced Study in the Visual Arts, National Gallery of Art: https://www.nga.gov/research/center/early-history-accademia-di-san-luca
+This repository uses the Canopy IIIF template to build and customize a website of resources for The Early History of the Accademia di San Luca, a project of the Center for Advanced Study in the Visual Arts, National Gallery of Art: https://www.nga.gov/research/center/early-history-accademia-di-san-luca
 
-Documentation, examples, and release notes for Canopy IIIF are availble from the main project: https://canopy-iiif.github.io/app/.
+Documentation, examples, and release notes for Canopy IIIF are available from the main project: https://canopy-iiif.github.io/app/.
 
 ## License
 
