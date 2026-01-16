@@ -1,9 +1,9 @@
 body.canopy-type-search
 .canopy-search-tabs-wrapper
 button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-white {
-  background-color: #00d6a4;
+  background-color: #009688;
   color: #ffffff;
-  border-color: #00d6a4;
+  border-color: #009688;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
   transition: background-color 150ms ease,
@@ -14,7 +14,7 @@ button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-whit
 body.canopy-type-search
 .canopy-search-tabs-wrapper
 button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-white:hover {
-  background-color: #009688;
+  background-color: #008C8C;
   color: #ffffff;
 }
 
