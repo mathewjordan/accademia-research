@@ -1,9 +1,9 @@
 body.canopy-type-search
 .canopy-search-tabs-wrapper
 button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-white {
-  background-color: #008080;
+  background-color: #20B2AA;
   color: #ffffff;
-  border-color: #008080;
+  border-color: #20B2AA;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
 }
@@ -11,8 +11,9 @@ button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-whit
 body.canopy-type-search
 .canopy-search-tabs-wrapper
 button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-white:hover {
-  background-color: #808080;
+  background-color: #008080;
   color: #ffffff;
+  border-color: #008080;
 }
 
 .canopy-type-work h1 {
