@@ -24,6 +24,10 @@ button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-whit
   word-break: break-all;
 }
 
+a:link { 
+  color: #009688; 
+}
+
 .clover-viewer {
   .clover-viewer-content {
     flex-direction: column;
