@@ -28,6 +28,14 @@ a:link {
   color: #009688; 
 }
 
+body.canopy-type-work button.c-eHPCUN,
+body.canopy-type-work button.c-eHPCUN:hover,
+body.canopy-type-work button.c-eHPCUN:focus,
+body.canopy-type-work button.c-eHPCUN:active,
+body.canopy-type-work button.c-eHPCUN:disabled {
+  color: #ffffff;
+}
+
 .clover-viewer {
   .clover-viewer-content {
     flex-direction: column;
