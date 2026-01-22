@@ -24,18 +24,6 @@ button.inline-flex.items-center.gap-2.rounded-md.border.border-slate-200.bg-whit
   word-break: break-all;
 }
 
-a:link { 
-  color: #009688; 
-}
-
-body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all,
-body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:link,
-body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:visited,
-body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:hover,
-body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:active {
-  color: #ffffff;
-}
-
 .clover-viewer {
   .clover-viewer-content {
     flex-direction: column;
