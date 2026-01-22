@@ -28,11 +28,11 @@ a:link {
   color: #009688; 
 }
 
-body.canopy-type-work button.c-eHPCUN,
-body.canopy-type-work button.c-eHPCUN:hover,
-body.canopy-type-work button.c-eHPCUN:focus,
-body.canopy-type-work button.c-eHPCUN:active,
-body.canopy-type-work button.c-eHPCUN:disabled {
+body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all,
+body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:link,
+body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:visited,
+body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:hover,
+body.canopy-type-work a.c-PJLV.c-lfKDQa.clover-slider-header-view-all:active {
   color: #ffffff;
 }
 
