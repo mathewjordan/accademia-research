@@ -6,11 +6,11 @@ Documentation, examples, and release notes for Canopy IIIF are available from th
 
 ## How to use these files
 
-There are several ways to use the project files.
+There are several ways to use our project files.
 
-**Explore and search** the site to find documents, images, and transcriptions: https://nationalgalleryofart.github.io/accademia-research/  
+**Explore and search** our site to find documents, images, and transcriptions: https://nationalgalleryofart.github.io/accademia-research/  
 
-**Take the IIIF manifest/collection URL** for the items you are interested to study and import that manifest in IIIF-compatible viewer or IIIF service. The three main collections are as follows:
+**Take the IIIF manifest/collection URL** for the items you are interested to study and import that manifest in a IIIF-compatible viewer or IIIF service. The three main collections are as follows:
 
 - Notarial documents: https://nationalgalleryofart.github.io/accademia-documents-iiif/index.json  
 - Maps: https://nationalgalleryofart.github.io/accademia-maps-iiif/index.json  
